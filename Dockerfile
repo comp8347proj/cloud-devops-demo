@@ -26,6 +26,6 @@ ENV PORT=8000
 
 
 # 8. Command to run the app in the container
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
-#CMD gunicorn mysite.wsgi:application --bind 0.0.0.0:${PORT}
+#CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD gunicorn mysite.wsgi:application --bind 0.0.0.0:${PORT}
 
