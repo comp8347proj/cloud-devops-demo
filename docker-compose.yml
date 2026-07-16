@@ -3,7 +3,7 @@ version: "3.9"
 services:
   web:
     build: .
-    container_name: cloud_devops_demo_web
+    container_name: cloud_devops_demo_web_S2026
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
